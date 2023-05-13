@@ -1,6 +1,5 @@
 import React from "react";
 import "./fullNews.css";
-import NewsBlock from "../newsBlock.js";
 function FullNews({ number }) {
   return (
     <div
@@ -12,10 +11,9 @@ function FullNews({ number }) {
         justifyContent: "center",
       }}
     >
-      <div className="container">
-        <NewsBlock />
-        <div className="news-container">
-          <div className="SplitSlide">
+      <div className='container'>
+        <div className='news-container'>
+          <div className='SplitSlide'>
             <h1>Новость №{number}1</h1>
             <p>
               Задача организации, в особенности же глубокий уровень погружения
@@ -29,8 +27,8 @@ function FullNews({ number }) {
               моральных ценностей.
             </p>
           </div>
-          <div className="SplitSlide">
-              <span>16:10</span>
+          <div className='SplitSlide'>
+            <span>16:10</span>
             <p>
               Задача организации, в особенности же глубокий уровень погружения
               выявляет срочную потребность новых принципов формирования
