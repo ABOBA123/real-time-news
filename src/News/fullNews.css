@@ -1,0 +1,22 @@
+.news-container{
+    width: 1075px;
+    height: 85vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+.SplitSlide{
+    width: 80%;
+    height: 50%;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
