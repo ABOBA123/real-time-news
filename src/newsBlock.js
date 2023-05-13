@@ -1,4 +1,4 @@
-function NewsBlock({}) {
+function NewsBlock() {
   return (
     <div
       style={{
@@ -52,6 +52,15 @@ function NewsBlock({}) {
           >
             Block
           </h4>
+          {!localStorage.getItem("nickname") !== undefined && (
+            <h4
+              onClick={() => {
+                window.location.pathname = "/login";
+              }}
+            >
+              Sign In
+            </h4>
+          )}
         </div>
       </div>
     </div>
