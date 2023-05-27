@@ -3,10 +3,10 @@ import "./App.css";
 import MainSlide from "./MainSlide.js";
 import FullNews from "./News/fullNews.js";
 import NewsBlock from "./newsBlock";
-import SingIn from "./signIn/signIn.js"
+import SingIn from "./signIn/signIn.js";
 import SignUp from "./signIn/signUp";
-import AdminPanel from "./AdminPanel/AdminPanel.js"
-import OpenAdminPanel from "./AdminPanel/openAdminPanel.js"
+import AdminPanel from "./AdminPanel/AdminPanel.js";
+import OpenAdminPanel from "./AdminPanel/openAdminPanel.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     element: <MainSlide />,
   },
   {
-    path: "/1",
+    path: "/:id",
     element: <FullNews />,
   },
   {
@@ -27,19 +27,19 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element:<SingIn/>,
+    element: <SingIn />,
   },
   {
-    path:"/register",
-    element:<SignUp/>
+    path: "/register",
+    element: <SignUp />,
   },
   {
-    path:"/adminPanel",
-    element:<AdminPanel/>
+    path: "/adminPanel",
+    element: <AdminPanel />,
   },
   {
-    path:"/openAdminPanel",
-    element:<OpenAdminPanel/>
+    path: "/openAdminPanel",
+    element: <OpenAdminPanel />,
   },
 ]);
 
