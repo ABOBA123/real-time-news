@@ -1,0 +1,51 @@
+.signInContainer{
+    width: 582px;
+    height: 573px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background:#FFFEFE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signInButton{
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #089FE0;
+    color: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.signIn-input{
+    width: 394px;
+    height: 44px;
+    border-radius: 5px;
+    margin: 5px;
+    border: 1px solid #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.arrow{
+    position: absolute;
+    right: 20px;
+}
+.input-eye{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.eye{
+    right: 20px;
+    top: 32%;
+    cursor: pointer;
+    position: absolute;
+}

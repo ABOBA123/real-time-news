@@ -6,18 +6,6 @@
   justify-content: center;
   background-color: #F5F5F5;
 }
-.news-block{
-  width: 98%;
-  height: 50px;
-  border-radius: 15px;
-  padding: 11px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  background:#FFFFFF;
-  margin-bottom: 20px;
-}
 .main-container{
   display: flex;
   flex-direction: row;

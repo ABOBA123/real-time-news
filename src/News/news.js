@@ -9,15 +9,12 @@ function News({ children, number }) {
 
   return (
     <div onClick={switchRouter}>
-      <div
+      <div className="d-fl ali-end br-15"
         style={{
           width: "670px",
           height: "250px",
           background: "#F5F5F5",
-          display: "flex",
-          alignItems: "end",
           margin: "10px",
-          borderRadius: "15px",
         }}
       >
         <span className='blur-text'>

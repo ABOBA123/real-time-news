@@ -11,9 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.full-slide{
+  width: 100%;
+  height: 100vh;
+  background-color: #F5F5F5;
+}
 .container{
   width: 1075px;
   height: 100vh;
   padding-top: 10px;
   position: relative;
+}
+.d-fl{
+  display: flex;
+}
+.ali-cent{
+align-items: center;
+}
+.ali-end{
+  align-items: end;
+}
+.jc-cent{
+  justify-content: center;
+}
+.jc-sp-be{
+  justify-content: space-between;
+}
+.jc-sp-ar{
+  justify-content: space-around;
+}
+.flex-d-col{
+  flex-direction: column;
+}
+.flex-d-row{
+  flex-direction: row;
+}
+.w-100{
+  width: 100%;
+}
+.h-100{
+  height: 100vh;
+}
+.cursor-p{
+  cursor: pointer;
+}
+.p-rel{
+  position: relative;
+}
+.p-abs{
+  position: absolute;
+}
+.p-fix{
+  position: fixed;
+}
+.br-15{
+  border-radius: 15px;
+}
+.back-FFF{
+  background: #FFFFFF;
 }

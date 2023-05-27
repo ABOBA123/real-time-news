@@ -1,0 +1,36 @@
+.block{
+    width: 333px;
+    height: 191px;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    cursor: pointer;
+    justify-content: end;
+    flex-direction: column;
+    background: #FFFFFF;
+}
+.Rectangle{
+    width: 1075px;
+    height: 135px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.Rectangle-button{
+    width: 335px;
+    height: 58px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    cursor: pointer;
+    border: none;
+
+}
+.Rectangle-blue-button{
+    width: 198px;
+    height: 56px;
+    bottom: 10px;
+    right: 10px;
+    color: #FFFFFF;
+    background: #089FE0;
+    border: none;
+}

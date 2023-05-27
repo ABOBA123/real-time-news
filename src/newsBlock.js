@@ -1,43 +1,33 @@
 function NewsBlock() {
   return (
     <div
+    className="p-fix w-100 d-fl ali-cent jc-cent"
       style={{
-        width: "100%",
-        position: "fixed",
         top: 10,
         left: 0,
         height: "50px",
-
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
         marginTop: 10,
         marginBottom: 20,
         zIndex: 2,
       }}
     >
       <div
+      className="br-15 d-fl jc-sp-be al-cent flex-d-row back-FFF"
         style={{
           width: "1050px",
           height: "100%",
-          borderRadius: "15px",
           padding: "11px",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          flexDirection: "row",
-          background: "#FFFFFF",
         }}
       >
         <h2>News</h2>
-        <div
+        <div className="d-fl flex-d-row jc-sp-ar"
           style={{
-            display: "flex",
-            flexDirection: "row",
-            width: "20%",
-            justifyContent: "space-around",
+            width: "35%",
           }}
-        >
+          >
+            <h4  onClick={() => {
+              window.location.pathname = "/adminPanel";
+            }}>Admin Panel</h4>
           <h4
             onClick={() => {
               window.location.pathname = "/aboutus";
