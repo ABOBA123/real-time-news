@@ -32,11 +32,8 @@ function FullNews() {
   }, [isPaused]);
 
   useEffect(() => {
-    console.log(data);
     setMessages((prev) => [...prev, data]);
   }, [data]);
-
-  console.log(messages);
 
   return (
     <div
