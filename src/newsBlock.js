@@ -1,4 +1,8 @@
+import { useState } from "react";
+import "./newsBlock.css"
+import React from "react";
 function NewsBlock() {
+  const [trueBurger, setTrueBurger] = useState(false)
   return (
     <div
     className="p-fix w-100 d-fl ali-cent jc-cent"
@@ -12,7 +16,7 @@ function NewsBlock() {
       }}
     >
       <div
-      className="br-15 d-fl jc-sp-be al-cent flex-d-row back-FFF"
+      className="br-15 d-fl jc-sp-be al-cent flex-d-row back-FFF hid"
         style={{
           width: "1050px",
           height: "100%",
@@ -52,6 +56,7 @@ function NewsBlock() {
             </h4>
           )}
         </div>
+        {trueBurger && <button className="burger">-</button>}
       </div>
     </div>
   );

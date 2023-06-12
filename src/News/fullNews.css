@@ -1,6 +1,6 @@
 .news-container{
     width: 1075px;
-    height: 85vh;
+    height: 100vh;
     position: absolute;
     display: flex;
     flex-direction: column;

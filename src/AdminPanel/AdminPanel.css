@@ -34,3 +34,57 @@
     background: #089FE0;
     border: none;
 }
+@media (max-width: 1140px) {
+    .block{
+        width: 300px;
+        height: 160px;
+        font-size: 13px;
+    }
+    .Rectangle{
+        width: 840px;
+    }
+    .Rectangle-button{
+        width: 300px;
+        height: 50px;
+    }
+}
+@media (max-width: 760px) {
+    .block{
+        width: 260px;
+        height: 140px;
+    }
+    .Rectangle{
+        width: 700px;
+    }
+    .Rectangle-button{
+        width: 240px;
+        height: 120px;
+    }
+}
+@media (max-width: 480px) {
+    .block{
+        width: 230px;
+        height: 120px;
+        font-size: 10px;
+    }
+    .Rectangle{
+        width: 600px;
+    }
+    .Rectangle-button{
+        width: 220px;
+        height: 120px;
+    }
+}
+@media (max-width: 360px) {
+    .block{
+        width: 200px;
+        height: 100px;
+    }
+    .Rectangle{
+        width: 780px;
+    }
+    .Rectangle-button{
+        width: 180px;
+        height: 100px;
+    }
+}

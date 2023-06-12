@@ -49,3 +49,63 @@
     cursor: pointer;
     position: absolute;
 }
+@media (max-width: 1140px) {
+    .signInContainer{
+        width: 500px;
+        height: 500px;
+        font-size: 14px;
+    }
+    .signInButton{
+        width: 350px;
+        font-size: 14px;
+    }
+    .signIn-input{
+        width: 350px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .signInContainer{
+        width: 450px;
+        height: 450px;
+        font-size: 12px;
+    }
+    .signInButton{
+        width: 300px;
+        font-size: 12px;
+    }
+    .signIn-input{
+        width: 300px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 480px) {
+    .signInContainer{
+        width: 400px;
+        height: 400px;
+        font-size: 10px;
+    }
+    .signInButton{
+        width: 250px;
+        font-size: 10px;
+    }
+    .signIn-input{
+        width: 250px;
+        font-size: 10px;
+    }
+}
+@media (max-width: 360px) {
+    .signInContainer{
+        width: 320px;
+        height: 320px;
+        font-size: 8px;
+    }
+    .signInButton{
+        width: 200px;
+        font-size: 8px;
+    }
+    .signIn-input{
+        width: 200px;
+        font-size: 8px;
+    }
+}

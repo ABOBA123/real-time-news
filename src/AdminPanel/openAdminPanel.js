@@ -3,12 +3,9 @@ import Rectangle from "./Rectangle.js";
 import RectangleBlueButton from "./RectangleBlueButton.js";
 function OpenAdminPanel() {
   return (
-    <div>
+    <div className="d-fl ali-cent jc-cent w-100">
       <div
-        className="container d-fl jc-cent flex-d-col"
-        style={{
-          alignItems: "flex-start",
-        }}
+        className="container d-fl jc-cent flex-d-col al-fl-st"
       >
         <Rectangle>
           <h4>Название новости</h4>

@@ -12,7 +12,10 @@ function FullNews() {
   useEffect(() => {
     if (!isPaused && id) {
       ws.current = new WebSocket("ws://localhost:8080/" + id); // создаем ws соединение
-      ws.current.onopen = () => setStatus("Соединение открыто"); // callback на ивент открытия соединения
+      ws.current.onopen = () => {setStatus("Соединение открыто");
+      ws.current?.send(JSON.stringify({
+        type:"get_messages"
+      }))}; // callback на ивент открытия соединения
       ws.current.onclose = () => setStatus("Соединение закрыто"); // callback на ивент закрытия соединения
 
       gettingData();
@@ -27,6 +30,14 @@ function FullNews() {
     ws.current.onmessage = (e) => {
       //подписка на получение данных по вебсокету
       if (isPaused) return;
+      try{
+        let parsed = JSON.parse(e?.data)
+        if(parsed.type === "get_messages"){
+          return setMessages(parsed?.message)
+        }
+      } catch (err){
+        
+      }
       setMessages((prev) => [...prev, { message: e?.data }]);
     };
   }, [isPaused]);
@@ -34,7 +45,12 @@ function FullNews() {
   useEffect(() => {
     setMessages((prev) => [...prev, data]);
   }, [data]);
-
+  useEffect(()=>{
+    // console.log(ws)
+    if(!isPaused){
+  
+    }
+  },[isPaused,ws])
   return (
     <div
       style={{
