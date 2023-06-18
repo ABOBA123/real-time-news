@@ -40,12 +40,21 @@
         height: 160px;
         font-size: 13px;
     }
+    .container{
+        width: 100%;
+    }
     .Rectangle{
         width: 840px;
+        font-size: 14px;
     }
     .Rectangle-button{
         width: 300px;
         height: 50px;
+    }
+    .Rectangle-blue-button{
+        width: 170px;
+        height: 50px;
+        margin: 20px
     }
 }
 @media (max-width: 760px) {
@@ -54,7 +63,13 @@
         height: 140px;
     }
     .Rectangle{
-        width: 700px;
+        width: 600px;
+        height: 180px;
+    }
+    .Rectangle-blue-button{
+        width: 158px;
+        height: 46px;
+        font-size: 12px;
     }
     .Rectangle-button{
         width: 240px;
@@ -68,11 +83,15 @@
         font-size: 10px;
     }
     .Rectangle{
-        width: 600px;
+        font-size: 12px;
     }
     .Rectangle-button{
         width: 220px;
         height: 120px;
+    }
+    .Rectangle-blue-button{
+        width: 150px;
+        margin: 20px;
     }
 }
 @media (max-width: 360px) {
@@ -81,7 +100,8 @@
         height: 100px;
     }
     .Rectangle{
-        width: 780px;
+        width: 480px;
+        height: 190px;
     }
     .Rectangle-button{
         width: 180px;

@@ -20,3 +20,29 @@
     align-items: flex-start;
     justify-content: center;
 }
+@media (max-width: 1140px) {
+    .news-container{
+        width: 880px;
+    }
+    .SplitSlide{
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .news-container{
+        width: 600px;
+    }
+    .SplitSlide{
+        font-size: 12px;
+    }
+}
+@media (max-width: 480px) {
+    .news-container{
+        width: 460px;
+    }    
+}
+@media (max-width: 360px) {
+    .news-container{
+        width: 380px;
+    }
+}

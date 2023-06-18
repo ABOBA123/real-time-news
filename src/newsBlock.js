@@ -28,7 +28,7 @@ function NewsBlock() {
         <div
           className={`menu-chapters ${
             trueBurger ? "active" : ""
-          } d-fl flex-d-row jc-sp-ar`}
+          } d-fl flex-d-row jc-sp-ar ali-cent`}
           style={{
             width: "35%",
           }}

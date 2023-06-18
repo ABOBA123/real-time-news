@@ -1,17 +1,15 @@
 import React from "react";
 import { useState } from 'react';
+import "./ChooseNews.css"
 function ChooseNews({ children, number }) {
   const [isActive, setIsActive] = useState(false);
   return (
     <div style={{display: "flex",flexDirection:"column",}}>
       <div
+      className="d-fl ali-cent jc-sp-be mediascreen"
         style={{
-          width: "345px",
-          height: "100px",
+
           borderRadius: "15px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
           padding: "5px",
           background: isActive ?"#FFFFFF" :"#E8FBFE",
           transition: "all 0.3s ease-in-out",

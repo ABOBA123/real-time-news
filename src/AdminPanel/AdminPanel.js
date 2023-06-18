@@ -4,7 +4,7 @@ import AdminPanelNews from "./AdminPanelNews.js"
 function AdminPanel(){
     return (
         <div>
-            <div>
+            <div >
             <AdminPanelNews/>
             </div>
         </div>

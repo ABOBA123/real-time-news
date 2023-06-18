@@ -61,7 +61,7 @@ function FullNews() {
         justifyContent: "center",
       }}
     >
-      <div className='container'>
+      <div className='container d-fl ali-cent jc-cent'>
         <div className='news-container'>
           <div className='SplitSlide'>
             <h1>Новость №1</h1>

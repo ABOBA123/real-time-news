@@ -9,10 +9,8 @@ function News({ children, number }) {
 
   return (
     <div onClick={switchRouter}>
-      <div className="d-fl ali-end br-15"
+      <div className="d-fl ali-end br-15 media"
         style={{
-          width: "670px",
-          height: "250px",
           background: "#F5F5F5",
           margin: "10px",
         }}

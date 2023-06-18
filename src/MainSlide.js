@@ -7,8 +7,8 @@ import NewsBlock from "./newsBlock";
 function MainSlide() {
   return (
     <div className='App'>
-      <div className='container'>
-        <div className='main-container'>
+      <div className='container d-fl ali-cent jc-cent'>
+        <div className='main-container d-fl jc-cent ali-cent'>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <ChooseNews />
           </div>

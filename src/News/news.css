@@ -6,3 +6,31 @@
 	background-image: linear-gradient(to bottom, #000, #000, rgba(0, 0, 0, 0));
     margin: 20px;
 }   
+.media{
+	width: 670px;
+	height: 250px;
+}
+@media (max-width:1140px) {
+	.media{
+		width: 520px;
+	}
+}
+@media (max-width:768px) {
+	.media{
+		width: 450px;
+		font-size: 14px;
+	}
+}
+@media (max-width:480px) {
+	.media{
+		width: 380px;
+		height: 200px;
+		font-size: 12px;
+	}
+}
+@media (max-width:360px) {
+	.media{
+		width: 330px;
+		height: 200px;
+	}
+}

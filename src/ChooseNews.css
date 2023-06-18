@@ -1,0 +1,26 @@
+.mediascreen{
+    width: 345px;
+    height: 100px;
+}
+@media (max-width: 1140px){
+    .mediascreen{
+        width: 300px;
+    }
+}
+@media (max-width: 748px){
+    .mediascreen{
+        width: 250px;
+        height: 70px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 480px){
+    .mediascreen{
+        width: 200px;
+    }
+}
+@media (max-width: 360px){
+    .mediascreen{
+        width: 150px;
+    }
+}
