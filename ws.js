@@ -3,7 +3,14 @@ const uuid = require("uuid");
 const SECRET_KEY_JWT = "test123";
 
 let subscribers = [],
-  news = [{ id: 1, title: "Первая новость", messages: [] }],
+  news = [
+    { id: 1, title: "Первая новость", tagId: 1, messages: [] },
+    { id: 1, title: "Вторая новость", tadId: 2, messages: [] },
+  ],
+  tags = [
+    { id: 1, title: "спорт" },
+    { id: 2, title: "инвестиции" },
+  ],
   users = [
     { id: 1, name: "evyz", password: "123", isAdmin: true },
     { id: 2, name: "viktor", password: "123" },
@@ -53,6 +60,7 @@ module.exports = {
   subscribers,
   users,
   news,
+  tags,
   SECRET_KEY_JWT,
   init: function (app) {
     app.ws("/:id", (ws, req) => {
