@@ -3,6 +3,7 @@ import "./newsBlock.css";
 import React from "react";
 function NewsBlock() {
   const [trueBurger, setTrueBurger] = useState(false);
+
   return (
     <div
       className='p-fix w-100 d-fl ali-cent jc-cent'
@@ -70,6 +71,7 @@ function NewsBlock() {
               </h4>
             )}
           </div>
+
         </div>
       </div>
     </div>

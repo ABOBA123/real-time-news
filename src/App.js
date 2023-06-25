@@ -7,6 +7,8 @@ import SingIn from "./signIn/signIn.js";
 import SignUp from "./signIn/signUp";
 import AdminPanel from "./AdminPanel/AdminPanel.js";
 import OpenAdminPanel from "./AdminPanel/openAdminPanel.js";
+import Theme from "./theme/theme.js"
+import darkTheme from "./theme/dark-theme.js"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
@@ -46,8 +48,11 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className='App'>
+      <darkTheme>
+      <Theme/>
       <NewsBlock />
       <RouterProvider router={router} />
+      </darkTheme>
     </div>
   );
 }
