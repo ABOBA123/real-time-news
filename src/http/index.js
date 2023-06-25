@@ -33,3 +33,8 @@ export const getNewsFromApi = async ({ page, tags }) => {
   const { data } = await axios.get(URL_PATH + "news" + reqStr);
   return data;
 };
+
+export const getTagsFromApi = async ({ page }) => {
+  const { data } = await axios.get(URL_PATH + "tags");
+  return data;
+};
