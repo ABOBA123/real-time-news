@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from 'react';
-import "./ChooseNews.css"
-function ChooseNews({ children, number }) {
+import "./selection.css"
+function Selection({ children, number }) {
   const [isActive, setIsActive] = useState(false);
   return (
     <div style={{display: "flex",flexDirection:"column",}}>
@@ -25,4 +25,4 @@ function ChooseNews({ children, number }) {
     </div>
   );
 }
-export default ChooseNews;
+export default Selection;

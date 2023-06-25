@@ -1,8 +1,7 @@
 import React from "react";
-import "./App.css";
-import News from "./News/news.js";
-import ChooseNews from "./ChooseNews.js";
-import NewsBlock from "./newsBlock";
+import "../../App.css";
+import News from "../News/news.js";
+import Selection from "./selection.js";
 // import Loop from "./loop.svg"
 function MainSlide() {
   return (
@@ -10,7 +9,7 @@ function MainSlide() {
       <div className='container d-fl ali-cent jc-cent'>
         <div className='main-container d-fl jc-cent ali-cent'>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <ChooseNews />
+            <Selection />
           </div>
           <div className='news'>
             <input

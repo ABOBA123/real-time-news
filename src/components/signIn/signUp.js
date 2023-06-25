@@ -1,10 +1,10 @@
 import "./signIn.css";
-import Arrow from "../Arrow1.svg";
-import eye from "./eye.svg";
-import eyeslash from "./eyeslash.svg";
+import Arrow from "../pictures/Arrow1.svg";
+import eye from "../pictures/eye.svg";
+import eyeslash from "../pictures/eyeslash.svg";
 import { useNavigate } from "react-router";
 import { useState } from "react";
-import { register } from "../http";
+import { register } from "../../http";
 function SignUp() {
   const [eyeSlash, setEyeSlash] = useState(true);
   const [email, setEmail] = useState();

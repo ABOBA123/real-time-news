@@ -1,6 +1,6 @@
 import "./AdminPanel.css"
 import { useNavigate } from "react-router";
-function AdminPanelNews(){
+function AdminPanel(){
     const navigate = useNavigate()
     return(
         <div style={{width:"100% ",display:"flex",alignItems:"center",justifyContent:"center"}}>
@@ -14,4 +14,4 @@ function AdminPanelNews(){
         </div>
     )
 }
-export default AdminPanelNews;
+export default AdminPanel;

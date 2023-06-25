@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import "./fullNews.css";
+import "./openNews.css";
 import { useParams } from "react-router-dom";
-function FullNews() {
+function OpenNews() {
   const { id } = useParams();
   const [isPaused, setIsPaused] = useState(false);
   const [data, setData] = useState(null);
@@ -90,4 +90,4 @@ function FullNews() {
     </div>
   );
 }
-export default FullNews;
+export default OpenNews;

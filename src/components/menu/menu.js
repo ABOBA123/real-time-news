@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./newsBlock.css";
+import "./menu.css";
 import React from "react";
-function NewsBlock() {
+function Menu() {
   const [trueBurger, setTrueBurger] = useState(false);
 
   return (
@@ -77,4 +77,4 @@ function NewsBlock() {
     </div>
   );
 }
-export default NewsBlock;
+export default Menu;
