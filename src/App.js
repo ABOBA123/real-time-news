@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import HomeSlide from "./components/home/homeSlide.js";
 import Open from "./components/News/openNews.js";
@@ -7,8 +7,9 @@ import SingIn from "./components/signIn/signIn.js";
 import SignUp from "./components/signIn/signUp";
 import AdminPanel from "./components/AdminPanel/AdminPanel.js";
 import OpenAdminPanel from "./components/AdminPanel/openAdminPanel.js";
-import Theme from "./components/theme/theme.js"
-import darkTheme from "./components/theme/dark-theme.js"
+import Theme from "./components/theme/theme.js";
+import darkTheme from "./components/theme/dark-theme.js";
+import ClockLoader from "react-spinners/ClockLoader";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   {
@@ -46,13 +47,30 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 700);
+  }, []);
   return (
-    <div className='App'>
-      <darkTheme>
-      <Theme/>
-      <Menu />
-      <RouterProvider router={router} />
-      </darkTheme>
+    <div className="App">
+      {loading ? (
+        <ClockLoader
+          color={"#36d7b7"}
+          loading={loading}
+          size={75}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      ) : (
+        <div>
+          <Theme />
+          <Menu />
+          <RouterProvider router={router} />
+        </div>
+      )}
     </div>
   );
 }

@@ -24,14 +24,15 @@ function Menu() {
           padding: "11px",
         }}
       >
+        <div className=" d-fl ali-cent">
         <h2>News</h2>
-
+        </div>
         <div
           className={`menu-chapters ${
             trueBurger ? "active" : ""
           } d-fl flex-d-row jc-sp-ar ali-cent`}
           style={{
-            width: "35%",
+            width: "45%",
           }}
         >
           <button onClick={() => setTrueBurger(!trueBurger)} className='burger'>
@@ -39,8 +40,9 @@ function Menu() {
             <div className='crumb'></div>
             <div className='crumb'></div>
           </button>
-          <div className='chapters d-fl flex-d-row jc-sp-ar'>
+          <div className='chapters d-fl flex-d-row jc-sp-be w-100' >
             <h4
+            className="cursor-p"
               onClick={() => {
                 window.location.pathname = "/adminPanel";
               }}
@@ -48,6 +50,7 @@ function Menu() {
               Admin Panel
             </h4>
             <h4
+            className="cursor-p"
               onClick={() => {
                 window.location.pathname = "/aboutus";
               }}
@@ -55,6 +58,7 @@ function Menu() {
               About us
             </h4>
             <h4
+            className="cursor-p"
               onClick={() => {
                 window.location.pathname = "/";
               }}
@@ -63,6 +67,7 @@ function Menu() {
             </h4>
             {!localStorage.getItem("nickname") !== undefined && (
               <h4
+              className="cursor-p"
                 onClick={() => {
                   window.location.pathname = "/login";
                 }}

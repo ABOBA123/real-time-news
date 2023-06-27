@@ -1,7 +1,9 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import "./openNews.css";
 import { useParams } from "react-router-dom";
+import { getOneNewsFromApi } from "../../http"
 function OpenNews() {
+  const [ newsInfo, setNewsInfo] = useState([])
   const { id } = useParams();
   const [isPaused, setIsPaused] = useState(false);
   const [data, setData] = useState(null);
@@ -51,6 +53,15 @@ function OpenNews() {
   
     }
   },[isPaused,ws])
+  useEffect(()=>{
+    getOneNewsFromApi({ id }).then((data)=>{
+      console.log(data)
+      setNewsInfo(data)
+    })
+  },[id])
+
+  var today = new Date(),
+            date = today.getFullYear() + '-' + '0' +(today.getMonth() + 1) + '-' + today.getDate();
   return (
     <div
       style={{
@@ -61,7 +72,7 @@ function OpenNews() {
         justifyContent: "center",
       }}
     >
-      <div className='container d-fl ali-cent jc-cent'>
+      <div className='container d-fl jc-cent'>
         <div className='news-container'>
           <div className='SplitSlide'>
             <h1>Новость №1</h1>
@@ -77,11 +88,15 @@ function OpenNews() {
               моральных ценностей.
             </p>
           </div>
+          
           {messages &&
             messages?.length > 0 &&
             messages.map((message) => (
               <div className='SplitSlide'>
-                <span>16:10</span>
+                <span>{date}</span>
+                {/* {today.getDate() === new Date().getDate() && (
+                <span> (today)</span>
+            )} */}
                 <p>{message?.message}</p>
               </div>
             ))}

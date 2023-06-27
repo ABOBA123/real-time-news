@@ -1,3 +1,6 @@
 body{
 background: #363537;
 }
+h1,h2,p,span{
+    color: rgb(210, 213, 216);
+}

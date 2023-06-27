@@ -9,10 +9,15 @@
 .main-container{
   width: 100%;
 }
-
+.loading{
+  z-index: 100;
+  size: 50px;
+  color: #36d7b7;
+  position: absolute;
+  
+}
 .news{
   width: 710px;
-  height: 620px;
   border-radius: 15px;
   background-color: #FFFFFF;
 }

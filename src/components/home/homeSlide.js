@@ -6,8 +6,8 @@ import Selection from "./selection.js";
 function MainSlide() {
   return (
     <div className='App'>
-      <div className='container d-fl ali-cent jc-cent'>
-        <div className='main-container d-fl jc-cent ali-cent'>
+      <div className='container d-fl  jc-cent'>
+        <div className='main-container d-fl jc-cent '>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Selection />
           </div>

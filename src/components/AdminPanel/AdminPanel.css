@@ -11,10 +11,9 @@
 }
 .Rectangle{
     width: 1075px;
-    height: 135px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 5px;
+    padding: 25px;
 }
 .Rectangle-button{
     width: 335px;
@@ -30,10 +29,31 @@
     height: 56px;
     bottom: 10px;
     right: 10px;
+    margin: 5px;
     color: #FFFFFF;
     background: #089FE0;
     border: none;
 }
+.editor-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .code-editor {
+    flex-grow: 1;
+    /* font-family: monospace; */
+    font-size: 16px;
+    line-height: 1.5em;
+    padding: 10px;
+    color: #272822;
+    border: none;
+    outline: none;
+  }
+  .search-news::placeholder {
+    color: black;
+  }
+  
 @media (max-width: 1140px) {
     .block{
         width: 300px;

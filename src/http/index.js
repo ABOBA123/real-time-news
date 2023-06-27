@@ -38,3 +38,8 @@ export const getTagsFromApi = async ({ page }) => {
   const { data } = await axios.get(URL_PATH + "tags");
   return data;
 };
+
+export const getOneNewsFromApi = async ({ id }) => {
+  const { data } = await axios.get(URL_PATH + "news/" +id);
+  return data;
+};

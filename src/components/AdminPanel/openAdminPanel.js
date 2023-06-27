@@ -1,39 +1,58 @@
 import "./AdminPanel.css";
 import Rectangle from "./Rectangle.js";
 import RectangleBlueButton from "./RectangleBlueButton.js";
+import React from "react";
+import { useState } from "react";
 function OpenAdminPanel() {
+  const [value, setValue] = useState("");
+  const [searchValue, setSearchValue] = useState("");
+
+  function handleChange(event) {
+    setValue(event.target.value);
+  }
+  const handleInputChange = (event) => {
+    setSearchValue(event.target.value);
+  };
+
+  
   return (
-    <div className="d-fl ali-cent jc-cent w-100">
+    <div className="w-100">
       <div
-        className="container d-fl jc-cent flex-d-col al-fl-st"
+        className="container d-fl flex-d-col"
       >
         <Rectangle>
-          <h4>Название новости</h4>
-          <span>Описание новости</span>
+  
+          <input className="search-news" onChange={handleInputChange} value={searchValue}  style={{ background:"white",fontWeight:"750", }} placeholder="Название новости"/>
+          <textarea 
+        className="code-editor" 
+        value={value} 
+        placeholder="Описание новости"
+        onChange={handleChange} 
+        spellCheck="false"
+      />
         </Rectangle>
         <button className="Rectangle-button">
           <h3> Создать новое сообщение</h3>
         </button>
-        <Rectangle>
+        {/* <Rectangle>
           <span>*** сделать textarea для написания сообщения ***</span>
           <RectangleBlueButton>
             <h3>Опубликовать</h3>
           </RectangleBlueButton>
-        </Rectangle>
+        </Rectangle> */}
         <Rectangle>
-          <span>
-            Как уже неоднократно упомянуто, сторонники тоталитаризма в науке
-            неоднозначны и будут превращены в посмешище, хотя само их
-            существование приносит несомненную пользу обществу. Не следует,
-            однако, забывать, что реализация намеченных плановых заданий не
-            оставляет шанса для приоретизации разума над эмоциями.
-            Противоположная точка зрения подразумевает, что действия
-            представителей оппозиции будут рассмотрены исключительно в разрезе
-            маркетинговых и финансовых предпосылок.
-          </span>
+          <h2>{searchValue}</h2>
+        {value === '' ? (
+  <p>Вот так это выглядит! Здесь пока пусто</p>
+) : (
+  <div>
+    {value}
+  </div>
+)}
           <RectangleBlueButton>Сохранить изменение</RectangleBlueButton>
         </Rectangle>
       </div>
+      
     </div>
   );
 }
