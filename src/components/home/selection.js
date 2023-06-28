@@ -13,10 +13,10 @@ function Selection({ children, number }) {
     });
   }, []);
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div style={{ display: "flex", flexDirection: "column"  }}>
       {chapters && chapters.map((item)=>
         <div
-          className="d-fl ali-cent jc-sp-be mediascreen"
+          className="d-fl ali-cent jc-sp-be  mediascreen"
           style={{
             borderRadius: "15px",
             padding: "5px",

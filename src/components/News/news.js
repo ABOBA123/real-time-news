@@ -20,7 +20,6 @@ function News({ children, number }) {
         <div
           className="d-fl ali-end br-15 media"
           style={{
-            background: "#F5F5F5",
             margin: "10px",
           }}
         >

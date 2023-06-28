@@ -8,7 +8,7 @@ import SignUp from "./components/signIn/signUp";
 import AdminPanel from "./components/AdminPanel/AdminPanel.js";
 import OpenAdminPanel from "./components/AdminPanel/openAdminPanel.js";
 import Theme from "./components/theme/theme.js";
-import darkTheme from "./components/theme/dark-theme.js";
+import darkTheme from  "./components/theme/dark-theme.css";
 import ClockLoader from "react-spinners/ClockLoader";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
@@ -48,6 +48,9 @@ const router = createBrowserRouter([
 
 function App() {
   const [loading, setLoading] = useState(false);
+  
+
+  
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -67,7 +70,7 @@ function App() {
       ) : (
         <div>
           <Theme />
-          <Menu />
+          <Menu  />
           <RouterProvider router={router} />
         </div>
       )}

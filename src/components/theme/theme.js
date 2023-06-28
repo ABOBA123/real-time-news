@@ -1,14 +1,27 @@
-import React from "react";
-import { useState } from "react";
-import "./theme.css"
+import React, { useState } from "react";
+import "./theme.css";
+
 function Theme() {
-    const [theme, setTheme] = useState(false)
+  const [isSwitched, setIsSwitched] = useState(false);
+
+  const handleSwitch = () => {
+    setIsSwitched(!isSwitched);
+  };
+
+
+  
   return (
     <div>
-      <button className="switcher" onClick={() => setTheme(true)}>
-        switch
+      <button
+        className={`switcher ${isSwitched ? "switched" : ""}`}
+        onClick={handleSwitch}
+        
+      >
+        <div className="switcherCircle"></div>
       </button>
     </div>
   );
 }
+
 export default Theme;
+

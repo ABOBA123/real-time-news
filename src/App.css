@@ -36,10 +36,13 @@
 @media (max-width: 1140px) {
   .main-container{
     flex-direction: column;
+    display: flex;
+    align-items: center;
   }
   .news{
     width: 570px;
     height: 520px;
+
   }
 }
 @media (max-width: 768px) {

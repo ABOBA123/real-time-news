@@ -1,6 +1,62 @@
-body{
-background: #363537;
+.App{
+  background-color: #1f1f1f;
 }
-h1,h2,p,span{
-    color: rgb(210, 213, 216);
+body {
+    background-color: #1f1f1f;
+  }
+  .media{
+    background-color: #535353;
+  }
+  .signIn-input{
+    background-color: #535353 ;
+    border: none;
 }
+::placeholder{
+    color: #ffffff;
+}
+.code-editor{
+    color: #ffffff;
+}
+.search-news{
+  background-color: #535353 ;
+}
+  .mediascreen{
+    background-color: #333333 !important;
+  }
+  .black{
+    background-color: #333333 !important;
+  }
+  .Rectangle-button{
+      background-color: #333333;
+  }
+  .block{
+    background-color: #333333;
+  }
+  .back-FFF{
+    background-color: #333333;
+}
+  .news-container{
+      background-color: #333333;
+  }
+  h1, h2, h3, h4, h5, h6 {
+      color: #ffffff;
+    }
+    .Rectangle{
+        background-color: #333333;
+    }
+    textarea{
+        background-color: #333333;
+    }
+    .news{
+        background-color: #333333;
+    } 
+  .signInContainer{
+      background-color: #333333;
+    }
+    p, span, li {
+        color: #ffffff;
+    }
+    .blur-text{
+      color: #ffffff;
+    }
+  

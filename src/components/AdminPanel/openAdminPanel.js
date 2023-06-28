@@ -14,22 +14,24 @@ function OpenAdminPanel() {
     setSearchValue(event.target.value);
   };
 
-  
   return (
     <div className="w-100">
-      <div
-        className="container d-fl flex-d-col"
-      >
+      <div className="container d-fl flex-d-col">
         <Rectangle>
-  
-          <input className="search-news" onChange={handleInputChange} value={searchValue}  style={{ background:"white",fontWeight:"750", }} placeholder="Название новости"/>
-          <textarea 
-        className="code-editor" 
-        value={value} 
-        placeholder="Описание новости"
-        onChange={handleChange} 
-        spellCheck="false"
-      />
+          <input
+            className="search-news black"
+            onChange={handleInputChange}
+            value={searchValue}
+            style={{ background: "white", fontWeight: "750" }}
+            placeholder="Название новости"
+          />
+          <textarea
+            className="code-editor"
+            value={value}
+            placeholder="Описание новости"
+            onChange={handleChange}
+            spellCheck="false"
+          />
         </Rectangle>
         <button className="Rectangle-button">
           <h3> Создать новое сообщение</h3>
@@ -41,18 +43,21 @@ function OpenAdminPanel() {
           </RectangleBlueButton>
         </Rectangle> */}
         <Rectangle>
-          <h2>{searchValue}</h2>
-        {value === '' ? (
-  <p>Вот так это выглядит! Здесь пока пусто</p>
-) : (
-  <div>
-    {value}
-  </div>
-)}
+          {searchValue === "" ? <h2>Название</h2> : <h2>{searchValue}</h2>}
+          {/* <h2>{searchValue}</h2> */}
+          {value === "" ? (
+            <p>Вот так это выглядит! Здесь пока пусто</p>
+          ) : (
+            <textarea
+              className="code-editor"
+              value={value}
+              placeholder="Описание новости"
+              style={{resize: "vertical" }}
+            />
+          )}
           <RectangleBlueButton>Сохранить изменение</RectangleBlueButton>
         </Rectangle>
       </div>
-      
     </div>
   );
 }

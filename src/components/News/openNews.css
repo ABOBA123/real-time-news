@@ -25,6 +25,8 @@
 @media (max-width: 768px) {
     .news-container{
         width: 600px;
+        display: flex;
+        align-items: center;
     }
     .SplitSlide{
         font-size: 12px;
