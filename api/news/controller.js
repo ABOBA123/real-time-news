@@ -29,7 +29,11 @@ class NewsController {
     return res.json(offset.getRowsFromReq(req, news));
   }
   async getOneNews(req, res, next) {
-    return res.json(offset.getById(req, news));
+    let obj = offset.getById(req, news);
+    if (!obj) {
+      return res.status(404).json({ message: "PAGE_NOT_FOUND" });
+    }
+    return res.json(obj);
   }
 }
 
