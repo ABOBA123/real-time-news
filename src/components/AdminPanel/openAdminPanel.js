@@ -15,25 +15,33 @@ function OpenAdminPanel() {
   };
 
   return (
-    <div className="w-100">
-      <div className="container d-fl flex-d-col">
+    <div className='w-100'>
+      <div className='container d-fl flex-d-col'>
         <Rectangle>
           <input
-            className="search-news black"
+            className='search-news black'
             onChange={handleInputChange}
             value={searchValue}
-            style={{ background: "white", fontWeight: "750" }}
-            placeholder="Название новости"
+            style={{
+              background: "var(--alt-main)",
+              fontWeight: "750",
+              border: "1px solid var(--alt-second)",
+            }}
+            placeholder='Название новости'
           />
           <textarea
-            className="code-editor"
+            className='code-editor'
             value={value}
-            placeholder="Описание новости"
+            placeholder='Описание новости'
             onChange={handleChange}
-            spellCheck="false"
+            spellCheck='false'
+            style={{
+              background: "var(--alt-main)",
+              border: "1px solid var(--alt-second)",
+            }}
           />
         </Rectangle>
-        <button className="Rectangle-button">
+        <button className='Rectangle-button'>
           <h3> Создать новое сообщение</h3>
         </button>
         {/* <Rectangle>
@@ -49,10 +57,10 @@ function OpenAdminPanel() {
             <p>Вот так это выглядит! Здесь пока пусто</p>
           ) : (
             <textarea
-              className="code-editor"
+              className='code-editor'
               value={value}
-              placeholder="Описание новости"
-              style={{resize: "vertical" }}
+              placeholder='Описание новости'
+              style={{ resize: "vertical" }}
             />
           )}
           <RectangleBlueButton>Сохранить изменение</RectangleBlueButton>

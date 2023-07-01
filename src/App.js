@@ -8,9 +8,11 @@ import SignUp from "./components/signIn/signUp";
 import AdminPanel from "./components/AdminPanel/AdminPanel.js";
 import OpenAdminPanel from "./components/AdminPanel/openAdminPanel.js";
 import Theme from "./components/theme/theme.js";
-import  "./components/theme/dark-theme.css";  
+// import "./components/theme/dark-theme.css";
 import ClockLoader from "react-spinners/ClockLoader";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import "./globals.css";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -48,9 +50,6 @@ const router = createBrowserRouter([
 
 function App() {
   const [loading, setLoading] = useState(false);
-  
-
-  
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -58,24 +57,24 @@ function App() {
     }, 700);
   }, []);
   return (
-    <div className="App">
-      {loading ? (
-        <ClockLoader
-          color={"#36d7b7"}
-          loading={loading}
-          size={75}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-      ) : (
-        <div>
-          <Theme />
-          <Menu  />
-          <RouterProvider router={router} />
-        </div>
-
-      )}
-    </div>
+    <Theme hiding={loading}>
+      <div className='App'>
+        {loading ? (
+          <ClockLoader
+            color={"#36d7b7"}
+            loading={loading}
+            size={75}
+            aria-label='Loading Spinner'
+            data-testid='loader'
+          />
+        ) : (
+          <>
+            <Menu />
+            <RouterProvider router={router} />
+          </>
+        )}
+      </div>
+    </Theme>
   );
 }
 export default App;

@@ -1,34 +1,47 @@
 .switcher {
-    width: 100px;
-    height: 40px;
-    top: 20px;
-    right: 20px;
-    z-index: 100;
-    border-radius: 20px;
-    background-color: #ccc;
-    position: absolute;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .switcher.switched {
-    background-color: #3d3c3c;
-  }
-  
-  .switcherCircle {
-    position: absolute;
-    width: 33px;
-    height: 33px;
-    background-color: #fff;
-    border-radius: 50%;
-    top: 3px;
-    left: 3px;
-    transition: transform 0.3s ease;
-  }
-  
-  .switcher.switched .switcherCircle {
-    transform: translateX(60px);
-  }
-  
+  width: 100px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  border-radius: 20px;
+  background-color: #ccc;
+  position: absolute;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.switcher.switched {
+  background-color: #3d3c3c;
+}
+
+.switcherCircle {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.3s ease;
+}
+
+.switcher.switched .switcherCircle {
+  transform: translateX(60px);
+}
+
+.dark-theme {
+}
+
+/* .dark-theme h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a {
+  color: white !important;
+} */

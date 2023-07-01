@@ -1,134 +1,133 @@
-.block{
-    width: 333px;
-    height: 191px;
-    border-radius: 15px;
-    padding: 15px;
-    display: flex;
-    cursor: pointer;
-    justify-content: flex-end;
-    flex-direction: column;
-    background: #FFFFFF;
+.block {
+  width: 333px;
+  height: 191px;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-end;
+  flex-direction: column;
+  background: #ffffff;
 }
-.Rectangle{
-    width: 1075px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 25px;
+.Rectangle {
+  width: 1075px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 25px;
 }
-.Rectangle-button{
-    width: 335px;
-    height: 58px;
-    border-radius: 15px;
-    background: #FFFFFF;
-    cursor: pointer;
-    border: none;
-
+.Rectangle-button {
+  width: 335px;
+  height: 58px;
+  border-radius: 15px;
+  background: var(--alt-main);
+  cursor: pointer;
+  border: none;
 }
-.Rectangle-blue-button{
-    width: 198px;
-    height: 56px;
-    bottom: 10px;
-    right: 10px;
-    margin: 5px;
-    border-radius: 10px;
-    color: #FFFFFF;
-    background: #089FE0;
-    border: none;
+.Rectangle-blue-button {
+  width: 198px;
+  height: 56px;
+  bottom: 10px;
+  right: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  color: #ffffff;
+  background: #089fe0;
+  border: none;
 }
 .editor-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  textarea {
-    resize: vertical;
-  }  
-  .code-editor {
-    flex-grow: 1;
-    font-family: monospace;
-    font-size: 16px;
-    line-height: 1.5em;
-    padding: 10px;
-    color: #272822;
-    border: none;
-    outline: none;
-  }
-  .search-news::placeholder {
-    color: black;
-  }
-  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  resize: vertical;
+}
+.code-editor {
+  flex-grow: 1;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 10px;
+  color: var(--alt);
+  border: none;
+  outline: none;
+}
+.search-news::placeholder {
+  color: black;
+}
+
 @media (max-width: 1140px) {
-    .block{
-        width: 300px;
-        height: 160px;
-        font-size: 13px;
-    }
-    .container{
-        width: 100%;
-    }
-    .Rectangle{
-        width: 840px;
-        font-size: 14px;
-    }
-    .Rectangle-button{
-        width: 300px;
-        height: 50px;
-    }
-    .Rectangle-blue-button{
-        width: 170px;
-        height: 50px;
-        margin: 20px
-    }
+  .block {
+    width: 300px;
+    height: 160px;
+    font-size: 13px;
+  }
+  .container {
+    width: 100%;
+  }
+  .Rectangle {
+    width: 840px;
+    font-size: 14px;
+  }
+  .Rectangle-button {
+    width: 300px;
+    height: 50px;
+  }
+  .Rectangle-blue-button {
+    width: 170px;
+    height: 50px;
+    margin: 20px;
+  }
 }
 @media (max-width: 760px) {
-    .block{
-        width: 260px;
-        height: 140px;
-    }
-    .Rectangle{
-        width: 500px;
-        height: 180px;
-    }
-    .Rectangle-blue-button{
-        width: 158px;
-        height: 46px;
-        font-size: 12px;
-    }
-    .Rectangle-button{
-        width: 240px;
-        height: 120px;
-    }
+  .block {
+    width: 260px;
+    height: 140px;
+  }
+  .Rectangle {
+    width: 500px;
+    height: 180px;
+  }
+  .Rectangle-blue-button {
+    width: 158px;
+    height: 46px;
+    font-size: 12px;
+  }
+  .Rectangle-button {
+    width: 240px;
+    height: 120px;
+  }
 }
 @media (max-width: 480px) {
-    .block{
-        width: 230px;
-        height: 120px;
-        font-size: 10px;
-    }
-    .Rectangle{
-        width: 300px;
-        font-size: 12px;
-    }
-    .Rectangle-button{
-        width: 220px;
-        height: 120px;
-    }
-    .Rectangle-blue-button{
-        width: 150px;
-        margin: 20px;
-    }
+  .block {
+    width: 230px;
+    height: 120px;
+    font-size: 10px;
+  }
+  .Rectangle {
+    width: 300px;
+    font-size: 12px;
+  }
+  .Rectangle-button {
+    width: 220px;
+    height: 120px;
+  }
+  .Rectangle-blue-button {
+    width: 150px;
+    margin: 20px;
+  }
 }
 @media (max-width: 360px) {
-    .block{
-        width: 200px;
-        height: 100px;
-    }
-    .Rectangle{
-        width: 250px;
-        height: 190px;
-    }
-    .Rectangle-button{
-        width: 180px;
-        height: 100px;
-    }
+  .block {
+    width: 200px;
+    height: 100px;
+  }
+  .Rectangle {
+    width: 250px;
+    height: 190px;
+  }
+  .Rectangle-button {
+    width: 180px;
+    height: 100px;
+  }
 }

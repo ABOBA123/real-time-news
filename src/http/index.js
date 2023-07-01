@@ -40,6 +40,6 @@ export const getTagsFromApi = async ({ page }) => {
 };
 
 export const getOneNewsFromApi = async ({ id }) => {
-  const { data } = await axios.get(URL_PATH + "news/" +id);
+  const { data } = await axios.get(URL_PATH + "news/" + id);
   return data;
 };

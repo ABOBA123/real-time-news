@@ -1,0 +1,26 @@
+:root {
+  --main: #f5f5f5;
+  --alt: #1f1f1f;
+  --alt-main: #fff;
+  --alt-second: #c7c7c7;
+  --accent: #089fe0;
+}
+
+.dark-theme {
+  --main: #1f1f1f;
+  --alt: #fff;
+  --alt-main: #535353;
+  --alt-second: #7a7a7a;
+}
+
+.dark-theme h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+p {
+  color: var(--alt) !important;
+}

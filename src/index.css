@@ -1,76 +1,76 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.full-slide{
+.full-slide {
   width: 100%;
   height: 100vh;
 }
-.container{
+.container {
   width: 1075px;
   height: 100vh;
   margin-top: 200px;
   padding-top: 10px;
   position: relative;
 }
-.d-fl{
+.d-fl {
   display: flex;
 }
-.ali-cent{
-align-items: center;
+.ali-cent {
+  align-items: center;
 }
-.ali-end{
+.ali-end {
   align-items: end;
 }
-.jc-cent{
+.jc-cent {
   justify-content: center;
 }
-.jc-sp-be{
+.jc-sp-be {
   justify-content: space-between;
 }
-.jc-sp-ar{
+.jc-sp-ar {
   justify-content: space-around;
 }
-.flex-d-col{
+.flex-d-col {
   flex-direction: column;
 }
-.flex-d-row{
+.flex-d-row {
   flex-direction: row;
 }
-.al-fl-st{
+.al-fl-st {
   align-items: flex-start;
 }
-.w-100{
+.w-100 {
   width: 100%;
 }
-.cursor-p{
+.cursor-p {
   cursor: pointer;
 }
-.p-rel{
+.p-rel {
   position: relative;
 }
-.p-abs{
+.p-abs {
   position: absolute;
 }
-.p-fix{
+.p-fix {
   position: fixed;
 }
-.br-15{
+.br-15 {
   border-radius: 15px;
 }
-.back-FFF{
-  background: #FFFFFF;
+.back-FFF {
+  background: var(--alt-main);
 }
-.color-black{
+.color-black {
   color: black;
 }
