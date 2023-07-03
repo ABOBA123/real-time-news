@@ -17,7 +17,7 @@ export const login = async ({ email, password }) => {
   return data;
 };
 
-export const getNewsFromApi = async ({ page, tags }) => {
+export const getNewsFromApi = async ({ page, tags, name }) => {
   let reqStr = "";
   if (page || tags) {
     reqStr += "?size=20";
@@ -30,7 +30,13 @@ export const getNewsFromApi = async ({ page, tags }) => {
     reqStr += `&tags=${JSON.stringify(tags)}`;
   }
 
-  const { data } = await axios.get(URL_PATH + "news" + reqStr);
+  let str = "";
+
+  if (name) {
+    str += (reqStr.length > 1 ? "&" : "?") + "name=" + name;
+  }
+
+  const { data } = await axios.get(URL_PATH + "news" + reqStr + str);
   return data;
 };
 

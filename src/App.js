@@ -56,9 +56,8 @@ function App() {
       setLoading(false);
     }, 700);
   }, []);
-  console.log(loading)
   return (
-    <Theme hiding={loading} >
+    <Theme hiding={loading}>
       <div className='App'>
         {loading ? (
           <ClockLoader
