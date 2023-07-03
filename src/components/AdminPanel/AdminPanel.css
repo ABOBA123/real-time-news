@@ -7,7 +7,7 @@
   cursor: pointer;
   justify-content: flex-end;
   flex-direction: column;
-  background: #ffffff;
+  background: var(--alt-main);
 }
 .Rectangle {
   width: 1075px;

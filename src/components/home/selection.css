@@ -1,6 +1,7 @@
 .mediascreen{
     width: 345px;
     height: 100px;
+    background: var(--alt-main)!important;
 }
 @media (max-width: 1140px){
     .mediascreen{

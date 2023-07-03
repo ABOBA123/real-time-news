@@ -15,7 +15,6 @@ function OpenAdminPanel() {
   };
 
   return (
-    <div className='w-100'>
       <div className='container d-fl flex-d-col'>
         <Rectangle>
           <input
@@ -44,15 +43,9 @@ function OpenAdminPanel() {
         <button className='Rectangle-button'>
           <h3> Создать новое сообщение</h3>
         </button>
-        {/* <Rectangle>
-          <span>*** сделать textarea для написания сообщения ***</span>
-          <RectangleBlueButton>
-            <h3>Опубликовать</h3>
-          </RectangleBlueButton>
-        </Rectangle> */}
+
         <Rectangle>
           {searchValue === "" ? <h2>Название</h2> : <h2>{searchValue}</h2>}
-          {/* <h2>{searchValue}</h2> */}
           {value === "" ? (
             <p>Вот так это выглядит! Здесь пока пусто</p>
           ) : (
@@ -66,7 +59,6 @@ function OpenAdminPanel() {
           <RectangleBlueButton>Сохранить изменение</RectangleBlueButton>
         </Rectangle>
       </div>
-    </div>
   );
 }
 export default OpenAdminPanel;
