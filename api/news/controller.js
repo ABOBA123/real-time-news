@@ -3,7 +3,7 @@ const { news, tags: tagsDB } = require("../../ws");
 
 class NewsController {
   async getNews(req, res, next) {
-    let { tags } = req.query;
+    let { tags, name } = req.query;
     if (tags) {
       try {
         JSON.parse(tags);
@@ -23,6 +23,15 @@ class NewsController {
         offset.getRowsFromReq(
           req,
           news.filter((item) => filtered.find((check) => check === item.tagId))
+        )
+      );
+    }
+
+    if (name) {
+      return res.json(
+        offset.getRowsFromReq(
+          req,
+          news.filter((item) => item.title.indexOf(name) > -1)
         )
       );
     }

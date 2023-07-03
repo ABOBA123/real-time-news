@@ -2,6 +2,7 @@ require("dotenv").config();
 
 const express = require("express");
 const app = express();
+const cors = require("cors");
 let expressWsInstance = require("express-ws")(app);
 
 const ws = require("./ws");
@@ -9,6 +10,7 @@ const ws = require("./ws");
 const api = require("./api/index");
 const PORT = process.env.MAIN_PORT || 8080;
 
+app.use(cors());
 app.use(express.json());
 app.use("/api", api);
 ws.init(app);
